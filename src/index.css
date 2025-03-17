@@ -5,3 +5,16 @@
 body{
     font-family: "Inter", sans-serif;
 }
+
+.btnBg{
+    background-color: #FF693B;
+    color: #FFFFFF
+}
+.textWhite{
+    color: #FFFFFF
+}
+
+ul .active{
+    color:#FF693B;
+    font-weight: 700;
+}
