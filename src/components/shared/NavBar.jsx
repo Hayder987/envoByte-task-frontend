@@ -1,9 +1,10 @@
-import { NavLink } from 'react-router'
+import { NavLink, useLocation } from 'react-router'
 import logo from '../../assets/images/logo.png'
 
 const NavBar = () => {
+  const {pathname} = useLocation()
   return (
-    <nav className="bg-primary flex py-3 px-4 lg:px-12 justify-between items-center">
+    <nav className={`${pathname==='/'?'bg-[#03135b]':'bg-blue-700'} flex py-3 px-4 lg:px-12 justify-between items-center`}>
       {/* logo */}
       <img src={logo} alt="" className="" />
       {/* menu */}
