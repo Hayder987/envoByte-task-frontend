@@ -2,10 +2,12 @@ import banner from "../../../assets/images/bg-banner.png";
 import DigitalServices from "./DigitalServices";
 import teamImage from '../../../assets/images/image.png'
 import SectionDivider from "../../common-components/SectionDivider";
+import BannerSectionTitle from "../../common-components/BannerSectionTitle";
+import ServiceSlider from "./ServiceSlider";
 
 const Banner = () => {
   return (
-    <div className="bg-[#03135b] py-10 relative">
+    <div className="bg-[#03135b] pt-10 relative">
       {/* Banner Section with Background */}
       <div
         style={{
@@ -34,8 +36,15 @@ const Banner = () => {
         </div>
       </div>
       <SectionDivider></SectionDivider>
-      
+      <BannerSectionTitle
+       shortTitle={'DIGITAL SERVICES'}
+       mainTitle={'Check Our Available Services'}
+       color={'#FF693B'}
+       btnName={'All Services'}
+      />
+      <ServiceSlider></ServiceSlider>
     </div>
+     
   );
 };
 
