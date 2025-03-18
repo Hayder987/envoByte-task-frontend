@@ -27,7 +27,7 @@ const Banner = () => {
         <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-[#03135b] via-transparent to-transparent blur-lg"></div>
 
         {/* Content */}
-        <div className="lg:max-w-[1440px] mx-auto">
+        <div className="lg:max-w-[1440px] mt-8 lg:mt-16 mx-auto">
          <DigitalServices />
          {/* banner Img */}
          <div className="mt-14">
@@ -39,7 +39,7 @@ const Banner = () => {
       <BannerSectionTitle
        shortTitle={'DIGITAL SERVICES'}
        mainTitle={'Check Our Available Services'}
-       color={'#FF693B'}
+       color={true}
        btnName={'All Services'}
       />
       <ServiceSlider></ServiceSlider>
@@ -49,3 +49,4 @@ const Banner = () => {
 };
 
 export default Banner;
+

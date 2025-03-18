@@ -27,7 +27,7 @@ const ServiceSlider = () => {
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
-        pagination={{ clickable: true }}
+        // pagination={{ clickable: true }}
         navigation={{ nextEl: ".next-btn", prevEl: ".prev-btn" }} 
         breakpoints={{
           640: { slidesPerView: 1, spaceBetween: 20 },
@@ -60,7 +60,7 @@ const ServiceSlider = () => {
         <FaAngleRight />
         </button>
       </div>
-      <p className="flex mb-10 items-center gap-3 justify-end text-gray-400 uppercase text-sm">Creative Solution <span className="flex"><TfiLayoutLineSolid /><TfiLayoutLineSolid /></span></p>
+      <p className="flex mb-10 items-center gap-3 justify-end text-gray-400 uppercase text-sm">Creative Solution <span className="flex"><TfiLayoutLineSolid /><TfiLayoutLineSolid /> <TfiLayoutLineSolid /></span></p>
     </div>
   );
 };
