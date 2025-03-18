@@ -12,8 +12,9 @@ const Profile = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         width: "100%",
+        height: "100%"
       }}
-      className="pb-20"
+      className="pb-32 md:pb-20"
     >
       <AnswerSection></AnswerSection>
       <BannerSectionTitle

@@ -18,7 +18,7 @@ const arr2 = [ project2, project4,  project6, project2, project1]
 
 const ProfileSlider = () => {
   return (
-    <div className="px-4 lg:px-12 py-4 ">
+    <div className="px-4 lg:px-12 py-4">
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
