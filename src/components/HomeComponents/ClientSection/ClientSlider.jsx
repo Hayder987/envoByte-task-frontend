@@ -26,7 +26,7 @@ const ClientSlider = () => {
     <div className="relative">
       <Swiper
         spaceBetween={20}
-        slidesPerView={3} 
+        slidesPerView={1} 
         grid={{ rows: 2, fill: "row" }} 
         loop={true}
         navigation={{ nextEl: ".next-1", prevEl: ".prev-1" }}

@@ -21,7 +21,7 @@ const ProfileSlider = () => {
     <div className="px-4 lg:px-12 py-4">
       <Swiper
         spaceBetween={20}
-        slidesPerView={3} 
+        slidesPerView={1} 
         loop={true}
         grid={{ rows: 2, fill: "row" }} 
         navigation={{ nextEl: ".next", prevEl: ".prev" }}
