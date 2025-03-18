@@ -15,7 +15,7 @@ const ProcessSection = () => {
         justifyContent: "center",
         alignItems: "center",
       }}
-      className="py-20 mt-6"
+      className="py-20 mt-4"
     >
       <div className="max-w-[1400px] text-white mx-auto relative">
         <div className="mb-12 lg:mb-20">
@@ -43,7 +43,7 @@ const ProcessSection = () => {
         </div>
         {/* side text */}
         <div className="lg:flex hidden">
-          <p className="flex -rotate-90 absolute right-6 top-[240px] mb-10 items-center gap-3 justify-end text-gray-300 uppercase text-sm">
+          <p className="flex -rotate-90 absolute right-6 top-[240px] mb-10 items-center gap-3 justify-end text-gray-400 uppercase text-sm">
             <span className="flex">
               <TfiLayoutLineSolid />
               <TfiLayoutLineSolid /> <TfiLayoutLineSolid />
