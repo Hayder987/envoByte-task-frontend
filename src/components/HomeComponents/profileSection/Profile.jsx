@@ -1,6 +1,7 @@
 import bannerBg from "../../../assets/images//answer-bg.png";
 import BannerSectionTitle from "../../common-components/BannerSectionTitle";
 import AnswerSection from "../AnswerSection/AnswerSection";
+import ProfileSlider from "./ProfileSlider";
 
 const Profile = () => {
   return (
@@ -21,6 +22,7 @@ const Profile = () => {
        color={false}
        btnName={'All Portfolio'}
       />
+      <ProfileSlider/>
 
     </div>
   );
