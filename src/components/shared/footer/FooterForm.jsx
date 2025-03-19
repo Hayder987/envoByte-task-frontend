@@ -78,7 +78,7 @@ const FooterForm = () => {
             required
             name="message"
             placeholder="Type your message here..."
-            rows={4}
+            rows={3}
             cols={5}
             className="border p-2 resize-none rounded-md border-blue-900 bg-[#0A2C8C33]"
           ></textarea>

@@ -2,6 +2,7 @@ import React from "react";
 import bg from '../../../assets/images/footer-bg-2.png';
 import FooterForm from "./FooterForm";
 import FooterInfo from "./FooterInfo";
+import FooterMenu from "./FooterMenu";
 
 const Footer = () => {
   return (
@@ -13,11 +14,11 @@ const Footer = () => {
         backgroundRepeat: "no-repeat",
         width: "100%",
       }}
-      className="px-4 py-16 md:py-20 lg:py-24"
+      className="py-4 pt-24 px-4"
     >
       <div className="lg:max-w-[1440px] mx-auto">
         {/* footer -1 */}
-        <div className="lg:max-w-[1110px] mx-auto flex gap-8 flex-col lg:flex-row">
+        <div className="lg:max-w-[1110px] mx-auto flex gap-12 lg:gap-8 flex-col-reverse lg:flex-row">
           {/* form */}
           <div className="lg:w-1/2 rounded-md border bg-[#0A2C8C33] p-6 border-blue-900">
            <FooterForm/>
@@ -27,11 +28,18 @@ const Footer = () => {
             <FooterInfo/>
            </div>
         </div>
-        {/* footer -2 */}
-        <div className="">
-
-        </div>
       </div>
+      <div className="border-b border-blue-900 my-20"></div>
+        {/* footer -2 */}
+        <div className="lg:max-w-[1440px] mx-auto">
+           <FooterMenu/>
+        </div>
+        <div className="border-b border-blue-900 "></div>
+        {/* Footer Bottom */}
+        <div className="text-center text-sm text-gray-400 mt-8">
+          ©2025 - <span className="font-semibold">ENVOBYTE</span>, All rights
+          are reserved.
+        </div>
     </div>
   );
 };
