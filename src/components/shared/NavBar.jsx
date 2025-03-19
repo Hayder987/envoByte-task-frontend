@@ -78,7 +78,7 @@ const NavBar = () => {
         </div>
         {/* button */}
         <div className="">
-          <button className="btnBg text-sm rounded-sm cursor-pointer md:py-3 py-2 px-8 md:px-14">
+          <button className="bg-[#FF693B] border border-[#FF693B] rounded-sm duration-500 text-white hover:border-white hover:border  hover:bg-transparent cursor-pointer md:py-2 py-2 px-8 md:px-14">
             See Pricing
           </button>
         </div>
