@@ -9,6 +9,7 @@ import man1 from "../../../assets/manImg/man1.png";
 import man2 from "../../../assets/manImg/man2.png";
 import man3 from "../../../assets/manImg/man3.png";
 import man4 from "../../../assets/manImg/man4.png";
+import { motion } from "framer-motion";
 
 const testimonials = [
   { desc: "Excellent service and great support!", name: "Stephanie Powell", company: "From Fiverr", logo: man1 },
@@ -22,31 +23,47 @@ const testimonials = [
 ];
 
 const ClientSlider = () => {
+  const slideVariants = {
+    hidden: { opacity: 0, y: 50, scale: 0.9 }, 
+    visible: { 
+      opacity: 1, 
+      y: 0, 
+      scale: 1, 
+      transition: { duration: 0.8, ease: "easeOut" } 
+    },
+  };
   return (
     <div className="relative">
       <Swiper
         spaceBetween={20}
-        slidesPerView={1} 
-        grid={{ rows: 2, fill: "row" }} 
+        slidesPerView={1}
+        grid={{ rows: 2, fill: "row" }}
         loop={true}
         navigation={{ nextEl: ".next-1", prevEl: ".prev-1" }}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
         breakpoints={{
-          640: { slidesPerView: 1, grid: { rows: 1 } }, 
-          768: { slidesPerView: 2, grid: { rows: 2 } }, 
-          1024: { slidesPerView: 3, grid: { rows: 2 } }, 
+          640: { slidesPerView: 1, grid: { rows: 1 } },
+          768: { slidesPerView: 2, grid: { rows: 2 } },
+          1024: { slidesPerView: 3, grid: { rows: 2 } },
         }}
         modules={[Grid, Pagination, Navigation]}
         className="mySwiper"
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <ClidentSlide
-              desc={testimonial.desc}
-              name={testimonial.name}
-              company={testimonial.company}
-              logo={testimonial.logo}
-            />
+            <motion.div
+              variants={slideVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, amount: 0.3 }}
+            >
+              <ClidentSlide
+                desc={testimonial.desc}
+                name={testimonial.name}
+                company={testimonial.company}
+                logo={testimonial.logo}
+              />
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>

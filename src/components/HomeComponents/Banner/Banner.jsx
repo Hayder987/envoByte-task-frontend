@@ -1,9 +1,10 @@
 import banner from "../../../assets/images/bg-banner.png";
 import DigitalServices from "./DigitalServices";
-import teamImage from '../../../assets/images/image.png'
+import teamImage from "../../../assets/images/image.png";
 import SectionDivider from "../../common-components/SectionDivider";
 import BannerSectionTitle from "../../common-components/BannerSectionTitle";
 import ServiceSlider from "./ServiceSlider";
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -28,25 +29,29 @@ const Banner = () => {
 
         {/* Content */}
         <div className="lg:max-w-[1440px] mt-8 lg:mt-16 mx-auto">
-         <DigitalServices />
-         {/* banner Img */}
-         <div className="mt-14">
-            <img src={teamImage} alt="" className="" />
-         </div>
+          <DigitalServices />
+          {/* banner Img */}
+          <motion.div
+            className="mt-14"
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }} 
+            viewport={{ once: false, amount: 0.3 }} 
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <img src={teamImage} alt="Team" className="w-full h-auto" />
+          </motion.div>
         </div>
       </div>
       <SectionDivider></SectionDivider>
       <BannerSectionTitle
-       shortTitle={'DIGITAL SERVICES'}
-       mainTitle={'Check Our Available Services'}
-       color={true}
-       btnName={'All Services'}
+        shortTitle={"DIGITAL SERVICES"}
+        mainTitle={"Check Our Available Services"}
+        color={true}
+        btnName={"All Services"}
       />
       <ServiceSlider></ServiceSlider>
     </div>
-     
   );
 };
 
 export default Banner;
-
