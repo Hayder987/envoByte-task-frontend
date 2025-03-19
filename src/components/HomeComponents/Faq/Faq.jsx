@@ -51,7 +51,7 @@ const Faq = () => {
             className="flex justify-between items-center cursor-pointer"
             onClick={() => toggleFAQ(index)}
           >
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 md:gap-6">
               <span className="text-blue-500 font-bold">{String(index + 1).padStart(2, "0")}.</span>
               <h3
                 className={`text-lg font-medium transition-colors ${
